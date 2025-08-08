@@ -8,7 +8,7 @@ Because sometimes… a roast needs *scientific confirmation*.
 **Team Name:** Laughing_Labcoats  
 
 **Team Members**  
-- **Team Lead:** Chaitanya – Jain University, Kochi  
+- **Team Lead:** Chode Chaitanya Kishore – Jain University, Kochi  
 - **Member 2:** Sreehari S Kartha - Jain University , Kochi  
 
 
@@ -42,8 +42,3 @@ It scores:
 - **Frameworks:** Flask  
 - **Libraries:** `requests`, `python-dotenv`, `Bootstrap`  
 - **Tools:** OpenRouter API (AI models), Git, Railway for deployment  
-
-**For Hardware:**  
-- Your phone, your laptop, and an actual mic (optional, but for dramatic effect)  
-
-
