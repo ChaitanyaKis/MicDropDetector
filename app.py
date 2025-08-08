@@ -1,18 +1,25 @@
 from flask import Flask, request, jsonify, render_template
 import requests
 import os
+from dotenv import load_dotenv
+
+# ✅ Load environment variables from .env (for local dev)
+load_dotenv()
 
 app = Flask(__name__)
 
-# ✅ Load the API key from environment variable
+# ✅ Read API key from environment
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
 MODEL = "openai/gpt-oss-20b"
 
-# ✅ DEBUG: Confirm key loaded
-print("🔑 OPENROUTER_API_KEY:", "Loaded ✅" if OPENROUTER_API_KEY else "NOT FOUND ❌")
+# ✅ Log the key status clearly (only for debugging)
+if OPENROUTER_API_KEY:
+    print("🔑 OPENROUTER_API_KEY loaded ✅")
+else:
+    print("❌ OPENROUTER_API_KEY NOT FOUND in env variables!")
 
-# ✅ Crash app on Railway if key not set (to avoid silent 401s)
-assert OPENROUTER_API_KEY, "❌ OPENROUTER_API_KEY is not set in Railway environment variables"
+# ✅ Fail early if key is missing
+assert OPENROUTER_API_KEY, "❌ OPENROUTER_API_KEY is not set. Please add it to Railway Environment Variables."
 
 @app.route('/')
 def home():
@@ -26,6 +33,7 @@ def rate_joke():
     if not joke:
         return jsonify({"error": "No joke provided"}), 400
 
+    # 🧠 Savage rating prompt
     prompt = f"""
 You're the ultimate savage roast judge at a mic-drop battle.
 
@@ -63,7 +71,7 @@ You are a mix of Dave Chappelle, Kevin Hart, and a roast battle god. Never be po
         reply = response.json()["choices"][0]["message"]["content"]
         return jsonify({"response": reply})
     except Exception as e:
-        print("❌ API Error:", str(e))  # ✅ Logs error to Railway console
+        print("❌ Error in OpenRouter request:", e)
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
