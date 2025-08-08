@@ -1,38 +1,50 @@
-#MicDropDetector.ai 🎤🔥
-Because sometimes… a roast needs scientific confirmation.
+# 🎤 MicDropDetector.ai  
 
-#Basic Details
-Team Name: Laughing_Labcoats
+Because sometimes… a roast needs *scientific confirmation*.  
 
-#Team Members
 
-Team Lead: Chode Chaitanya Kishore – Jain University, Kochi
+## 📌 Basic Details  
 
-Member 2: Sreehari S Kartha – Jain University, Kochi
+**Team Name:** Laughing_Labcoats  
 
-#Project Description
-MicDropDetector.ai is an AI-powered web app that analyzes jokes, roasts, and savage one-liners to rate their Mic Drop Potential™ — so you’ll never drop the mic on a weak burn again.
+**Team Members**  
+- **Team Lead:** Chaitanya – Jain University, Kochi  
+- **Member 2:** Alex – Meme University, Internet Campus  
+- **Member 3:** Sam – Roast Institute of Technology  
 
-#The Problem (that doesn't exist)
-Have you ever roasted someone and then awkwardly wondered…
 
-“Was that good enough to drop the mic?”
+## 💡 Project Description  
+MicDropDetector.ai is an AI-powered web app that **analyzes jokes, roasts, and savage one-liners** to rate their **Mic Drop Potential™** — so you’ll *never* drop the mic on a weak burn again.  
 
-Millions (well, maybe dozens) of people suffer from Mic Drop Uncertainty Disorder (MDUD) every day.
 
-#The Solution (that nobody asked for)
-We built MicDropDetector.ai — an AI that judges your joke like a brutally honest stand-up comedian.
-It scores burn intensity, punchline timing, surprise factor, and linguistic sassiness…
-and then tells you if your roast deserves a mic drop, or just a slow clap.
+## 😏 The Problem (that doesn't exist)  
+Have you ever roasted someone and then awkwardly wondered…  
+> “Was that good enough to drop the mic?”  
 
-#Technical Details
-##Technologies/Components Used
-Languages: Python, HTML, CSS, JavaScript
+Millions (well, maybe dozens) of people suffer from **Mic Drop Uncertainty Disorder (MDUD)** every day.  
 
-Frameworks: Flask
 
-Libraries: requests, python-dotenv, Bootstrap
+## 🤯 The Solution (that nobody asked for)  
+We built **MicDropDetector.ai** — an AI that judges your joke like a brutally honest stand-up comedian.  
+It scores:  
+- Burn Intensity 🔥  
+- Punchline Timing ⏳  
+- Surprise Factor 😮  
+- Linguistic Sassiness 💅  
 
-Tools: OpenRouter API (AI models), Git, Railway for deployment
+…and then tells you if your roast deserves a **mic drop** or just a slow clap.  
+
+
+## 🛠️ Technical Details  
+
+### **Technologies/Components Used**  
+
+- **Languages:** Python, HTML, CSS, JavaScript  
+- **Frameworks:** Flask  
+- **Libraries:** `requests`, `python-dotenv`, `Bootstrap`  
+- **Tools:** OpenRouter API (AI models), Git, Railway for deployment  
+
+**For Hardware:**  
+- Your phone, your laptop, and an actual mic (optional, but for dramatic effect)  
 
 
