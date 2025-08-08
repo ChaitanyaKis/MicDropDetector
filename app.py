@@ -1,12 +1,15 @@
 from flask import Flask, request, jsonify, render_template
 import requests
-import os  # 👈 Add this
+import os
 
 app = Flask(__name__)
 
 # ✅ Securely get the API key from environment
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
 MODEL = "openai/gpt-oss-20b"
+
+# 🪵 Debug print to confirm it's loading the API key (remove after verifying)
+print("🔑 OPENROUTER_API_KEY:", "Loaded ✅" if OPENROUTER_API_KEY else "NOT FOUND ❌")
 
 @app.route('/')
 def home():
@@ -20,8 +23,6 @@ def rate_joke():
     if not joke:
         return jsonify({"error": "No joke provided"}), 400
 
-    # 🧠 Brutal, clear, mic-drop-focused prompt
-
     prompt = f"""
 You're the ultimate savage roast judge at a mic-drop battle.
 
@@ -33,13 +34,10 @@ Respond ONLY in this format:
 
 Burn Score: (1 to 10)  
 Verdict: (1-line crowd reaction like "OHHHHHHHH!", "That joke committed murder!", etc.)  
-Feedback: (Make this the FUNNIEST, most BRUTAL roast of the joke possible — like a stand-up comic destroying a heckler. Be savage, sarcastic, loud, and clever. No boring advice. No over-explaining. Just raw comedy. If the joke makes no sense, make fun of how confused you are. If it slaps, act like you just witnessed history max 109 charecters.)
+Feedback: (Make this the FUNNIEST, most BRUTAL roast of the joke possible — like a stand-up comic destroying a heckler. Be savage, sarcastic, loud, and clever. No boring advice. No over-explaining. Just raw comedy. If the joke makes no sense, make fun of how confused you are. If it slaps, act like you just witnessed history max 109 characters.)
 
 You are a mix of Dave Chappelle, Kevin Hart, and a roast battle god. Never be polite. Always be hilarious.
 """
-
-    
-    
 
     headers = {
         "Authorization": f"Bearer {OPENROUTER_API_KEY}",
@@ -62,10 +60,9 @@ You are a mix of Dave Chappelle, Kevin Hart, and a roast battle god. Never be po
         reply = response.json()["choices"][0]["message"]["content"]
         return jsonify({"response": reply})
     except Exception as e:
+        print("❌ API Error:", str(e))  # Log the error in Railway logs
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    import os
     port = int(os.environ.get("PORT", 8080))
     app.run(host='0.0.0.0', port=port)
-
