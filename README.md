@@ -9,8 +9,7 @@ Because sometimes… a roast needs *scientific confirmation*.
 
 **Team Members**  
 - **Team Lead:** Chaitanya – Jain University, Kochi  
-- **Member 2:** Alex – Meme University, Internet Campus  
-- **Member 3:** Sam – Roast Institute of Technology  
+- **Member 2:** Sreehari S Kartha - Jain University , Kochi  
 
 
 ## 💡 Project Description  
