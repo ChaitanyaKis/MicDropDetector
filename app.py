@@ -4,8 +4,8 @@ import requests
 app = Flask(__name__)
 
 # Replace with your actual OpenRouter API key
-OPENROUTER_API_KEY = "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"
-MODEL = "openai/gpt-3.5-turbo"
+OPENROUTER_API_KEY = "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"
+MODEL = "openai/gpt-oss-20b"
 
 @app.route('/')
 def home():
