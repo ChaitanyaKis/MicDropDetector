@@ -41,4 +41,10 @@ It scores:
 - **Languages:** Python, HTML, CSS, JavaScript  
 - **Frameworks:** Flask  
 - **Libraries:** `requests`, `python-dotenv`, `Bootstrap`  
-- **Tools:** OpenRouter API (AI models), Git, Railway for deployment  
+- **Tools:** OpenRouter API (AI models), Git, Railway for deployment
+
+- Home Page
+- <img width="1919" height="904" alt="image" src="https://github.com/user-attachments/assets/9a0855fb-c7a9-451d-b318-2055f569ec3e" />
+
+-Result
+<img width="1909" height="888" alt="image" src="https://github.com/user-attachments/assets/5cf0010a-0284-412f-9df9-4eb98f521e5f" />
