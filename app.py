@@ -1,10 +1,11 @@
 from flask import Flask, request, jsonify, render_template
 import requests
+import os  # 👈 Add this
 
 app = Flask(__name__)
 
-# Replace with your actual OpenRouter API key
-OPENROUTER_API_KEY = "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"
+# ✅ Securely get the API key from environment
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
 MODEL = "openai/gpt-oss-20b"
 
 @app.route('/')
