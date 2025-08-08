@@ -4,12 +4,15 @@ import os
 
 app = Flask(__name__)
 
-# ✅ Securely get the API key from environment
+# ✅ Load the API key from environment variable
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
 MODEL = "openai/gpt-oss-20b"
 
-# 🪵 Debug print to confirm it's loading the API key (remove after verifying)
+# ✅ DEBUG: Confirm key loaded
 print("🔑 OPENROUTER_API_KEY:", "Loaded ✅" if OPENROUTER_API_KEY else "NOT FOUND ❌")
+
+# ✅ Crash app on Railway if key not set (to avoid silent 401s)
+assert OPENROUTER_API_KEY, "❌ OPENROUTER_API_KEY is not set in Railway environment variables"
 
 @app.route('/')
 def home():
@@ -60,7 +63,7 @@ You are a mix of Dave Chappelle, Kevin Hart, and a roast battle god. Never be po
         reply = response.json()["choices"][0]["message"]["content"]
         return jsonify({"response": reply})
     except Exception as e:
-        print("❌ API Error:", str(e))  # Log the error in Railway logs
+        print("❌ API Error:", str(e))  # ✅ Logs error to Railway console
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
