@@ -46,6 +46,8 @@ It scores:
 - ## Delopyed Link
 - https://micdropdetector-production.up.railway.app/
 
+
+## Example
 - Home Page
 - <img width="1919" height="904" alt="image" src="https://github.com/user-attachments/assets/9a0855fb-c7a9-451d-b318-2055f569ec3e" />
 
