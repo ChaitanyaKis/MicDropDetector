@@ -43,7 +43,7 @@ It scores:
 - **Libraries:** `requests`, `python-dotenv`, `Bootstrap`  
 - **Tools:** OpenRouter API (AI models), Git, Railway for deployment
 
-- ##Delopyed Link
+- ## Delopyed Link
 - https://micdropdetector-production.up.railway.app/
 
 - Home Page
