@@ -13,7 +13,7 @@ Because sometimes… a roast needs *scientific confirmation*.
 
 
 ## 💡 Project Description  
-MicDropDetector.ai is an AI-powered web app that **analyzes jokes, roasts, and savage one-liners** to rate their **Mic Drop Potential™** — so you’ll *never* drop the mic on a weak burn again.  
+MicDropDetector is an AI-powered web app that **analyzes jokes, roasts, and savage one-liners** to rate their **Mic Drop Potential™** — so you’ll *never* drop the mic on a weak burn again.  
 
 
 ## 😏 The Problem (that doesn't exist)  
