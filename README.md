@@ -5,7 +5,7 @@ Because sometimes… a roast needs *scientific confirmation*.
 
 ## 📌 Basic Details  
 
-**Team Name:** Laughing_Labcoats  
+**Team Name:** Kill.Switch 
 
 **Team Members**  
 - **Team Lead:** Chode Chaitanya Kishore – Jain University, Kochi  
