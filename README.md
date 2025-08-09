@@ -1,4 +1,4 @@
-# 🎤 MicDropDetector.ai  
+# 🎤 MicDropDetector
 
 Because sometimes… a roast needs *scientific confirmation*.  
 
