@@ -24,7 +24,7 @@ Millions (well, maybe dozens) of people suffer from **Mic Drop Uncertainty Disor
 
 
 ## 🤯 The Solution (that nobody asked for)  
-We built **MicDropDetector.ai** — an AI that judges your joke like a brutally honest stand-up comedian.  
+We built **MicDropDetector** — an AI that judges your joke like a brutally honest stand-up comedian.  
 It scores:  
 - Burn Intensity 🔥  
 - Punchline Timing ⏳  
